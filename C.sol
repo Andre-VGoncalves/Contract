@@ -32,10 +32,10 @@ contract E is C {
     }
 }
 
-contract Caller {
+/*contract Caller {
     C c = new C();
     function f() {
         uint local = c.data;
     }
-}
+}*/
 

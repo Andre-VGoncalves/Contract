@@ -6,8 +6,8 @@ contract C {
     uint constant x = 32**22 + 8;
     string constant text = "abc";
     bytes32 myhash = keccak256("abc");
-    
-    function f (uint a) private returns (uint b) { return a + 1; }
+
+    function f (uint a, uint b) pure returns (uint) { return a * (b + 42); }
     function setData (uint a) { data = a; }
     function getData() public returns(uint) { return data; }
     function compute (uint a, uint b) internal returns (uint) { return a + b; }

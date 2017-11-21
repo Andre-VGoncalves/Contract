@@ -9,7 +9,7 @@ contract owned {
     }
 
 }
-
+//teste
 contract mortal is owned {
     function close() onlyOwner {
         selfdestruct(owner);

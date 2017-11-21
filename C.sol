@@ -28,3 +28,10 @@ contract E is C {
         uint val = compute(3,5);
     }
 }
+
+contract Caller {
+    C c = new C();
+    function f() {
+        uint local = c.data;
+    }
+}

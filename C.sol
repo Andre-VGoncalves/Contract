@@ -35,3 +35,4 @@ contract Caller {
         uint local = c.data;
     }
 }
+

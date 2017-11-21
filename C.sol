@@ -3,7 +3,10 @@ pragma solidity ^0.4.0;
 contract C {
 
     uint private data;
-
+    uint constant x = 32**22 + 8;
+    string constant text = "abc";
+    bytes32 myhash = keccak256("abc");
+    
     function f (uint a) private returns (uint b) { return a + 1; }
     function setData (uint a) { data = a; }
     function getData() public returns(uint) { return data; }
